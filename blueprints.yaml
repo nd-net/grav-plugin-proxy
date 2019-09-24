@@ -1,0 +1,26 @@
+name: Proxy
+version: 0.9.0
+description: Proxies other webpages, circumventing CORS restrictions.
+icon: plug
+author:
+  name: Andreas Hartl
+  email: grav@nd-com.net
+homepage: https://github.com/nd-net/grav-plugin-proxy
+keywords: grav, proxy, cors
+bugs: https://github.com/nd-net/grav-plugin-proxy/issues
+docs: https://github.com/nd-net/grav-plugin-proxy/blob/develop/README.md
+license: GPL-3.0-or-later
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
